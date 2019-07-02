@@ -1,0 +1,2 @@
+# Generic templates for projects
+

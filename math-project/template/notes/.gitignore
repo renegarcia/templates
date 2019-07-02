@@ -1,0 +1,5 @@
+*.prv
+latex.out
+*.log
+*.xml
+_region_.*

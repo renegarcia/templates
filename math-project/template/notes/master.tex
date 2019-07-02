@@ -1,0 +1,88 @@
+\documentclass[a4paper,british]{scrartcl}
+\usepackage{xparse}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{xstring}
+\usepackage{suffix}
+\usepackage{authblk}
+
+\usepackage[unicode=true,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]
+ {hyperref}
+\hypersetup{
+ pdfauthor={Rene Garcia},
+ pdfkeywords={}}
+
+\def\leeds{School of mathematics, University of Leeds, LS2 9JT, Leeds,
+UK}
+
+\author{René García\thanks{mmrig@leeds.ac.uk}\\
+  \small{\texttt\leeds}
+}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=british]{english}
+\usepackage{csquotes}
+
+\usepackage[style=numeric, backend=bibtex8]{biblatex}
+\providecommand{\theoremname}{Theorem}
+
+\addbibresource{refs.bib}
+
+
+\newcommand*\R{\mathbb{R}}%
+
+\renewcommand*\C{\mathbb{C}}%
+
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+
+
+\newcommand*{\set}[1]{\left\{#1\right\}}
+\WithSuffix\newcommand\set*[1]{\{#1\}}
+
+
+
+
+\begin{document}
+
+\title{}
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+
+
+
+
+\printbibliography
+
+\end{document}
+
+%preview-LaTeX-command
+
+%(custom-set-faces 
+%   '(preview-reference-face ((t (:background "#ebdbb2" :foreground
+%  "black")))))
+
+% (local-set-key (kbd "<C-tab>") 'LaTeX-indent-line)
+% (local-set-key (kbd "C-c %") 'comment-region)
+% (TeX-add-symbols '("eqref" TeX-arg-ref (ignore)))
+
+% (setq reftex-label-alist '((nil ?e nil "~\\eqref{%s}" nil nil)))
+
+% (TeX-run-style-hooks "amsmath")
